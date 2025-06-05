@@ -1,0 +1,13 @@
+Gender,HasLeftBank,customer_age_avg,Geography,customer_location,customer_left_count
+Male,1,45,Spain,182,182
+Female,1,44,Spain,231,231
+Male,1,45,France,351,351
+Male,1,45,Germany,366,366
+Female,1,45,Germany,448,448
+Female,1,45,France,460,460
+Female,0,37,Germany,745,745
+Female,0,38,Spain,858,858
+Male,0,37,Germany,950,950
+Male,0,38,Spain,1206,1206
+Female,0,37,France,1801,1801
+Male,0,37,France,2402,2402
