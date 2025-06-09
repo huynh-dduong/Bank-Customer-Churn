@@ -1,0 +1,2852 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Customer-Churn-Records-Cleaned' inline='true' name='federated.11j5mit1ufkgrd17n7i850di23qu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Customer-Churn-Records-Cleaned' name='textscan.0rd7x780rm77061d83agd1cjdgga'>
+            <connection class='textscan' directory='C:/Users/russe/OneDrive/Documents/GitHub/Bank-Customer-Churn/raw_data' filename='Customer-Churn-Records-Cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0rd7x780rm77061d83agd1cjdgga' name='Customer-Churn-Records-Cleaned.csv' table='[Customer-Churn-Records-Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CustomerId' ordinal='0' />
+            <column datatype='integer' name='CreditScore' ordinal='1' />
+            <column datatype='string' name='Geography' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='integer' name='Age' ordinal='4' />
+            <column datatype='integer' name='YearsAtBank' ordinal='5' />
+            <column datatype='real' name='Balance' ordinal='6' />
+            <column datatype='integer' name='NumOfProducts' ordinal='7' />
+            <column datatype='integer' name='HasCrCard' ordinal='8' />
+            <column datatype='integer' name='IsActiveMember' ordinal='9' />
+            <column datatype='real' name='EstimatedSalary' ordinal='10' />
+            <column datatype='integer' name='HasLeftBank' ordinal='11' />
+            <column datatype='integer' name='Complain' ordinal='12' />
+            <column datatype='integer' name='SatisfactionScore' ordinal='13' />
+            <column datatype='string' name='CardType' ordinal='14' />
+            <column datatype='integer' name='PointsEarned' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerId]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>CustomerId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScore]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>CreditScore</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geography]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>Geography</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsAtBank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsAtBank]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>YearsAtBank</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumOfProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumOfProducts]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>NumOfProducts</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasCrCard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasCrCard]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>HasCrCard</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsActiveMember</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsActiveMember]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>IsActiveMember</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedSalary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedSalary]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>EstimatedSalary</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasLeftBank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasLeftBank]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>HasLeftBank</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complain</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Complain]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>Complain</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SatisfactionScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SatisfactionScore]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>SatisfactionScore</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CardType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CardType]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>CardType</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PointsEarned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PointsEarned]</local-name>
+            <parent-name>[Customer-Churn-Records-Cleaned.csv]</parent-name>
+            <remote-alias>PointsEarned</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[Balance]' peg='0' size='10000' />
+      </column>
+      <column datatype='real' name='[Balance]' role='measure' type='quantitative' />
+      <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+      </column>
+      <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([CustomerId])' />
+      </column>
+      <column caption='Card Type' datatype='string' name='[CardType]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Complain (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Complain]' peg='0' size='0.303' />
+      </column>
+      <column datatype='integer' name='[Complain]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Credit Score (bin)' datatype='integer' name='[Credit Score (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[CreditScore]' peg='0' size='50' />
+      </column>
+      <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+      <column aggregation='None' caption='Estimated Salary (bin)' datatype='integer' name='[Estimated Salary (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[EstimatedSalary]' peg='0' size='10000' />
+      </column>
+      <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Geography]' role='dimension' semantic-role='[NUTS].[Name]' type='nominal' />
+      <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+      <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+      <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+      <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Points Earned (bin)' datatype='integer' name='[Points Earned (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[PointsEarned]' peg='0' size='100' />
+      </column>
+      <column caption='Points Earned' datatype='integer' name='[PointsEarned]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Satisfaction Score (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[SatisfactionScore]' peg='0' size='1' />
+      </column>
+      <column caption='Satisfaction Score' datatype='integer' name='[SatisfactionScore]' role='measure' type='quantitative' />
+      <column caption='Years At Bank' datatype='integer' name='[YearsAtBank]' role='measure' type='quantitative' />
+      <column caption='Customer-Churn-Records-Cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]' role='measure' type='quantitative' />
+      <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Balance]' derivation='Avg' name='[avg:Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NumOfProducts]' derivation='Avg' name='[avg:NumOfProducts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Complain]' derivation='Count' name='[cnt:Complain:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[YearsAtBank]' derivation='Count' name='[cnt:YearsAtBank:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Complain]' derivation='CountD' name='[ctd:Complain:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Balance]' derivation='Sum' name='[sum:Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Complain]' derivation='Sum' name='[sum:Complain:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HasLeftBank]' derivation='Sum' name='[sum:HasLeftBank:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/russe/AppData/Local/Temp/TableauTemp/#TableauTemp_1yrclsq0ysnqst1bt745u04kymbf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/09/2025 01:25:08 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CustomerId</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CustomerId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CustomerId</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CreditScore</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CreditScore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CreditScore</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>573</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geography</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Geography]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Geography</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsAtBank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsAtBank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsAtBank</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Balance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Balance</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7517</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NumOfProducts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NumOfProducts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NumOfProducts</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HasCrCard</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HasCrCard]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HasCrCard</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IsActiveMember</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IsActiveMember]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IsActiveMember</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EstimatedSalary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EstimatedSalary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EstimatedSalary</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HasLeftBank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HasLeftBank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HasLeftBank</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Complain</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Complain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Complain</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SatisfactionScore</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SatisfactionScore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SatisfactionScore</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CardType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CardType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CardType</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PointsEarned</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PointsEarned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PointsEarned</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Customer-Churn-Records-Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1077</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[avg:NumOfProducts:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[cnt:YearsAtBank:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu]&quot;</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[cnt:Complain:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[avg:Age:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[sum:Age:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[ctd:Complain:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[sum:Complain:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[sum:HasLeftBank:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[avg:Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[sum:Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Customer-Churn-Records-Cleaned.csv' id='Customer-Churn-Records-Cleaned.csv_40DCF81EB871431B987BD7E300579ED2'>
+            <properties context=''>
+              <relation connection='textscan.0rd7x780rm77061d83agd1cjdgga' name='Customer-Churn-Records-Cleaned.csv' table='[Customer-Churn-Records-Cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CustomerId' ordinal='0' />
+                  <column datatype='integer' name='CreditScore' ordinal='1' />
+                  <column datatype='string' name='Geography' ordinal='2' />
+                  <column datatype='string' name='Gender' ordinal='3' />
+                  <column datatype='integer' name='Age' ordinal='4' />
+                  <column datatype='integer' name='YearsAtBank' ordinal='5' />
+                  <column datatype='real' name='Balance' ordinal='6' />
+                  <column datatype='integer' name='NumOfProducts' ordinal='7' />
+                  <column datatype='integer' name='HasCrCard' ordinal='8' />
+                  <column datatype='integer' name='IsActiveMember' ordinal='9' />
+                  <column datatype='real' name='EstimatedSalary' ordinal='10' />
+                  <column datatype='integer' name='HasLeftBank' ordinal='11' />
+                  <column datatype='integer' name='Complain' ordinal='12' />
+                  <column datatype='integer' name='SatisfactionScore' ordinal='13' />
+                  <column datatype='string' name='CardType' ordinal='14' />
+                  <column datatype='integer' name='PointsEarned' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_AA51D68841B245BFADCD71ADD9385EE3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Churn by Tenure' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Churn by Tenure' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Churn by Activity/Complain'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column datatype='integer' name='[Complain]' role='measure' type='quantitative' />
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+            <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[IsActiveMember]' derivation='None' name='[none:IsActiveMember:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:IsActiveMember:ok]' value='116' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:IsActiveMember:ok]</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Complain:ok]</cols>
+      </table>
+      <simple-id uuid='{FA2F9972-4753-42D7-9C9F-5AA2B051EE18}' />
+    </worksheet>
+    <worksheet name='Churn by Activity/Credit Card'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+            <column-instance column='[HasCrCard]' derivation='None' name='[none:HasCrCard:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[IsActiveMember]' derivation='None' name='[none:IsActiveMember:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:IsActiveMember:ok]' value='116' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:IsActiveMember:ok]</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:HasCrCard:ok]</cols>
+      </table>
+      <simple-id uuid='{38BA588C-F8FB-44EE-894E-797A4FF024D7}' />
+    </worksheet>
+    <worksheet name='Churn by Age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0%' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' id='legend-color' value='#ffffff' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D404ED04-1898-42FF-B7A5-F9DE99BD8E99}' />
+    </worksheet>
+    <worksheet name='Churn by Balance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Balance]' peg='0' size='10000' />
+            </column>
+            <column datatype='real' name='[Balance]' role='measure' type='quantitative' />
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Balance (bin)]' derivation='None' name='[none:Balance (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Balance (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Balance (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7370849B-774B-41A8-9864-18EDE09F8C80}' />
+    </worksheet>
+    <worksheet name='Churn by Card'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Card Type' datatype='string' name='[CardType]' role='dimension' type='nominal' />
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[CardType]' derivation='Count' name='[cnt:CardType:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CardType]' derivation='None' name='[none:CardType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:CardType:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;SILVER&quot;</bucket>
+              <bucket>&quot;GOLD&quot;</bucket>
+              <bucket>&quot;PLATINUM&quot;</bucket>
+              <bucket>&quot;DIAMOND&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+              <lod column='[federated.11j5mit1ufkgrd17n7i850di23qu].[cnt:CardType:qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:CardType:nk]</cols>
+      </table>
+      <simple-id uuid='{BBF7FCEA-1CD9-4B52-8F98-4DBDCF49464A}' />
+    </worksheet>
+    <worksheet name='Churn by Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Geography]' role='dimension' semantic-role='[NUTS].[Name]' type='nominal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Geography]' derivation='None' name='[none:Geography:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[Longitude (generated)]' field-type='quantitative' max='2747466.1855885945' min='-2234753.048188976' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[Latitude (generated)]' field-type='quantitative' max='7459858.2399826776' min='4293055.6062308727' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0%' />
+            <format attr='font-size' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='20' />
+            <format attr='color' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' />
+              <text column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' />
+              <lod column='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Geography:nk]' />
+              <lod column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]' />
+              <geometry column='[federated.11j5mit1ufkgrd17n7i850di23qu].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j5mit1ufkgrd17n7i850di23qu].[Latitude (generated)]</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{1DB03DB6-7CF1-49FC-844B-32011106F81A}' />
+    </worksheet>
+    <worksheet name='Churn by Country, Age, and Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Geography]' role='dimension' semantic-role='[NUTS].[Name]' type='nominal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Geography]' derivation='None' name='[none:Geography:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Geography:nk]' value='24' />
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Geography:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>([federated.11j5mit1ufkgrd17n7i850di23qu].[none:Age (bin):ok] / [federated.11j5mit1ufkgrd17n7i850di23qu].[none:Geography:nk])</cols>
+      </table>
+      <simple-id uuid='{8D8D4E95-8FF4-44D6-9712-00406B9F26A2}' />
+    </worksheet>
+    <worksheet name='Churn by Credit Card'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[HasCrCard]' derivation='None' name='[none:HasCrCard:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]' />
+              <size column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' />
+              <text column='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:HasCrCard:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{917FE938-3D95-4470-AA7B-0FD6CBA644BA}' />
+    </worksheet>
+    <worksheet name='Churn by Credit Score'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column aggregation='None' caption='Credit Score (bin)' datatype='integer' name='[Credit Score (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[CreditScore]' peg='0' size='50' />
+            </column>
+            <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Credit Score (bin)]' derivation='None' name='[none:Credit Score (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Credit Score (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Credit Score (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{370741E0-629F-4AFA-93CA-DBC86B2FEB37}' />
+    </worksheet>
+    <worksheet name='Churn by Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{AE379CC5-7EE9-486C-8728-499B20C33543}' />
+    </worksheet>
+    <worksheet name='Churn by Points'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Points Earned (bin)' datatype='integer' name='[Points Earned (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[PointsEarned]' peg='0' size='100' />
+            </column>
+            <column caption='Points Earned' datatype='integer' name='[PointsEarned]' role='measure' type='quantitative' />
+            <column-instance column='[Points Earned (bin)]' derivation='None' name='[none:Points Earned (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' enable-instant-analytics='true' formula='median' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Points Earned (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Points Earned (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{FAD5C602-4116-418E-ADD3-51B344343EE1}' />
+    </worksheet>
+    <worksheet name='Churn by Products'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+            <column-instance column='[NumOfProducts]' derivation='None' name='[none:NumOfProducts:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:NumOfProducts:ok]</cols>
+      </table>
+      <simple-id uuid='{2DEED81D-101B-4F67-A205-87BC7055EC0F}' />
+    </worksheet>
+    <worksheet name='Churn by Salary'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column aggregation='None' caption='Estimated Salary (bin)' datatype='integer' name='[Estimated Salary (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[EstimatedSalary]' peg='0' size='10000' />
+            </column>
+            <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Estimated Salary (bin)]' derivation='None' name='[none:Estimated Salary (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Estimated Salary (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Balance (bin)]</column>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Estimated Salary (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{0FB58DA1-A0C4-4E4B-808E-11032990D42A}' />
+    </worksheet>
+    <worksheet name='Churn by Salary and Balance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column aggregation='None' caption='Estimated Salary (bin)' datatype='integer' name='[Estimated Salary (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[EstimatedSalary]' peg='0' size='10000' />
+            </column>
+            <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Estimated Salary (bin)]' derivation='None' name='[none:Estimated Salary (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[avg:Age:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + ([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[avg:Age:qk]))</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Estimated Salary (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Balance (bin)]</column>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Estimated Salary (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{91C13DEE-9EBD-4857-9338-694E1474C098}' />
+    </worksheet>
+    <worksheet name='Churn by Satisfaction and Complaints'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column datatype='integer' name='[Complain]' role='measure' type='quantitative' />
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[Satisfaction Score (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[SatisfactionScore]' peg='0' size='1' />
+            </column>
+            <column caption='Satisfaction Score' datatype='integer' name='[SatisfactionScore]' role='measure' type='quantitative' />
+            <column-instance column='[Complain]' derivation='Count' name='[cnt:Complain:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Satisfaction Score (bin)]' derivation='None' name='[none:Satisfaction Score (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[cnt:Complain:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[Multiple Values]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[Multiple Values] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>([federated.11j5mit1ufkgrd17n7i850di23qu].[none:Satisfaction Score (bin):ok] / [federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names])</cols>
+        <show-full-range>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Balance (bin)]</column>
+          <column>[federated.11j5mit1ufkgrd17n7i850di23qu].[Estimated Salary (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1622188F-6302-4602-98CB-71648314208D}' />
+    </worksheet>
+    <worksheet name='Churn by Tenure'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column caption='Years At Bank' datatype='integer' name='[YearsAtBank]' role='measure' type='quantitative' />
+            <column-instance column='[YearsAtBank]' derivation='None' name='[none:YearsAtBank:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:YearsAtBank:ok]</cols>
+      </table>
+      <simple-id uuid='{6A64CAC0-EAD6-41BC-BF8A-3B99EC835C52}' />
+    </worksheet>
+    <worksheet name='Churn by Tenure and Card Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Card Type' datatype='string' name='[CardType]' role='dimension' type='nominal' />
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column caption='Years At Bank' datatype='integer' name='[YearsAtBank]' role='measure' type='quantitative' />
+            <column-instance column='[CardType]' derivation='None' name='[none:CardType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YearsAtBank]' derivation='None' name='[none:YearsAtBank:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:CardType:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;SILVER&quot;</bucket>
+              <bucket>&quot;GOLD&quot;</bucket>
+              <bucket>&quot;PLATINUM&quot;</bucket>
+              <bucket>&quot;DIAMOND&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]</rows>
+        <cols>([federated.11j5mit1ufkgrd17n7i850di23qu].[none:YearsAtBank:ok] / [federated.11j5mit1ufkgrd17n7i850di23qu].[none:CardType:nk])</cols>
+      </table>
+      <simple-id uuid='{90C26043-C147-4BF6-A2EB-2D147B71152F}' />
+    </worksheet>
+    <worksheet name='Churn by Tenure/Number of Products'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Churn rate' datatype='real' name='[Calculation_299489393993588736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([HasLeftBank]) / COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column caption='Has Left Bank' datatype='integer' name='[HasLeftBank]' role='measure' type='quantitative' />
+            <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+            <column caption='Years At Bank' datatype='integer' name='[YearsAtBank]' role='measure' type='quantitative' />
+            <column-instance column='[NumOfProducts]' derivation='Avg' name='[avg:NumOfProducts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YearsAtBank]' derivation='None' name='[none:YearsAtBank:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' value='p0.0%' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' id='legend-color' value='#ffffff' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[avg:NumOfProducts:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.11j5mit1ufkgrd17n7i850di23qu].[avg:NumOfProducts:qk] + [federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk])</rows>
+        <cols>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:YearsAtBank:ok]</cols>
+      </table>
+      <simple-id uuid='{AB224316-61D3-4F99-ABF4-80564CC31B28}' />
+    </worksheet>
+    <worksheet name='Customer Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer-Churn-Records-Cleaned' name='federated.11j5mit1ufkgrd17n7i850di23qu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j5mit1ufkgrd17n7i850di23qu'>
+            <column caption='Customer Count' datatype='integer' name='[Calculation_299489393995988993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([CustomerId])' />
+            </column>
+            <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Gender:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{104F150D-2936-4518-8069-CFA20F288C8A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='3' param='vert' type-v2='layout-flow' w='98980' x='510' y='926'>
+            <zone h='6019' id='5' type-v2='text' w='98980' x='510' y='926'>
+              <formatted-text>
+                <run bold='true' fontsize='24'>Bank Churn Report</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='372' h='43056' id='6' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98980' x='510' y='6945'>
+              <zone h='43056' id='15' name='Churn by Age' show-title='false' w='33036' x='510' y='6944'>
+                <layout-cache cell-count-w='16' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43056' id='21' name='Churn by Gender' show-title='false' w='32972' x='33546' y='6944'>
+                <layout-cache cell-count-w='2' minheight='141' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43056' id='19' name='Churn by Country' show-title='false' w='32972' x='66518' y='6944'>
+                <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+                <format attr='margin-top' value='0' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-bottom' value='0' />
+                <format attr='padding' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='49073' id='10' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98980' x='510' y='50001'>
+              <zone fixed-size='1275' h='49074' id='25' is-fixed='true' name='Churn by Tenure' show-title='false' w='24745' x='510' y='50000'>
+                <layout-cache minheight='142' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='49074' id='28' name='Churn by Products' show-title='false' w='24745' x='25255' y='50000'>
+                <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='110' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='49074' id='31' name='Churn by Card' show-title='false' w='24745' x='50000' y='50000'>
+                <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49074' id='12' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='24745' x='74745' y='50000'>
+                <zone h='24537' id='13' name='Churn by Activity/Complain' show-title='false' w='24745' x='74745' y='50000'>
+                  <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24537' id='14' name='Churn by Activity/Credit Card' show-title='false' w='24745' x='74745' y='74537'>
+                  <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2200' minheight='2200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98148' id='32' param='vert' type-v2='layout-flow' w='99156' x='422' y='926'>
+                <zone h='6019' id='5' type-v2='text' w='99156' x='422' y='926'>
+                  <formatted-text>
+                    <run bold='true' fontsize='24'>Bank Churn Report</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43056' id='15' is-fixed='true' name='Churn by Age' show-title='false' w='33052' x='422' y='6944'>
+                  <layout-cache cell-count-w='16' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43056' id='21' is-fixed='true' name='Churn by Gender' show-title='false' w='33052' x='33474' y='6944'>
+                  <layout-cache cell-count-w='2' minheight='141' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43056' id='19' is-fixed='true' name='Churn by Country' show-title='false' w='33052' x='66526' y='6944'>
+                  <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='25' is-fixed='true' name='Churn by Tenure' show-title='false' w='24816' x='422' y='50000'>
+                  <layout-cache minheight='142' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='28' is-fixed='true' name='Churn by Products' show-title='false' w='24815' x='25238' y='50000'>
+                  <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='110' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='31' is-fixed='true' name='Churn by Card' show-title='false' w='24762' x='50053' y='50000'>
+                  <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24537' id='13' is-fixed='true' name='Churn by Activity/Complain' show-title='false' w='24763' x='74815' y='50000'>
+                  <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='24537' id='14' is-fixed='true' name='Churn by Activity/Credit Card' show-title='false' w='24763' x='74815' y='74537'>
+                  <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{252B5B3C-D07B-4EE7-89AE-6474F801F787}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Customer Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A804A3DF-9DE8-4AD9-8B4E-2DDE65EC5D68}' />
+    </window>
+    <window class='worksheet' name='Churn by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{10193430-1A41-4849-A898-988ADABC25EF}' />
+    </window>
+    <window class='worksheet' name='Churn by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{DAF052D6-17B5-4AF4-98DF-A505129ADF02}' />
+    </window>
+    <window class='worksheet' name='Churn by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FB7E85AC-972F-4593-9391-6A5CF7572446}' />
+    </window>
+    <window class='worksheet' name='Churn by Country, Age, and Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{813CD6A4-FF63-4687-A477-F17A2F27F736}' />
+    </window>
+    <window class='worksheet' name='Churn by Tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E5220164-9B78-49F7-9B3D-5C8ABB46CE1D}' />
+    </window>
+    <window class='worksheet' name='Churn by Card'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6CE15A06-BDEB-4FC4-80F1-918989468301}' />
+    </window>
+    <window class='worksheet' name='Churn by Tenure and Card Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{008A0EF9-8E84-4EDD-9803-D49F50E26F52}' />
+    </window>
+    <window class='worksheet' name='Churn by Tenure/Number of Products'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4DE2C8D9-6991-4A40-9DFF-C07740625045}' />
+    </window>
+    <window class='worksheet' name='Churn by Activity/Complain'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{768BA78D-ECDF-4AA3-BCBB-258E6F092713}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Churn by Activity/Credit Card'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{05BA0BF9-6080-49A0-B0B1-BDFAFB4CCDAA}' />
+    </window>
+    <window class='worksheet' name='Churn by Products'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{178560BA-11DB-4A38-BFCE-1F1420F5D465}' />
+    </window>
+    <window class='worksheet' name='Churn by Credit Card'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393995988993:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CF486C4-BBF9-4B42-BB46-EA18FAFEF722}' />
+    </window>
+    <window class='worksheet' name='Churn by Credit Score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9739EA15-178E-4190-B033-6F478882875C}' />
+    </window>
+    <window class='worksheet' name='Churn by Balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4B8D340-DD4E-45C6-93C4-171F00DDA61F}' />
+    </window>
+    <window class='worksheet' name='Churn by Salary'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E2BDA67-EFBF-4311-B889-E5867AC81068}' />
+    </window>
+    <window class='worksheet' name='Churn by Salary and Balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AB5B7C7E-116F-4558-9551-3170D1DFACBC}' />
+    </window>
+    <window class='worksheet' name='Churn by Satisfaction and Complaints'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AEDCE4EC-BE16-44AE-BDFF-CAB09C7CF7E0}' />
+    </window>
+    <window class='worksheet' name='Churn by Points'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1294C815-202E-490E-B75C-9EE81ACCA893}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Churn by Activity/Complain'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Activity/Credit Card'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Card'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Products'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Tenure'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{B1A4C560-D4A4-4288-8CC2-2DF4A8FFEA8B}' />
+    </window>
+  </windows>
+</workbook>

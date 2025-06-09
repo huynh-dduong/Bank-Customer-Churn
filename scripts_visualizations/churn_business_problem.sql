@@ -1,80 +1,150 @@
-SELECT * 
-FROM `customer-churn-records-cleaned`
-ORDER BY HasLeftBank;
+SELECT * FROM `customer-churn-records-cleaned`;
 
+-- Satisfaction Sentiment --
 
-SELECT 
-	COUNT(DISTINCT CustomerId) AS customer_count
-FROM `customer-churn-records-cleaned`;
-
---  Determine if customer gender/geography affects if customer left bank
+-- Counting number of customers that left the bank who complained and the respective satisfaction score after complaint resolution
 SELECT 
 	Gender,
-	HasLeftBank,
-    ROUND(AVG(Age), 0) AS customer_age_avg,
     Geography,
-    COUNT(Geography) AS customer_location,
-    COUNT(HasLeftBank) AS customer_left_count
-FROM `customer-churn-records-cleaned`
-GROUP BY Gender, HasLeftBank, Geography
-ORDER BY customer_left_count;
-
--- Determine if credit score affects if customer left bank 
-SELECT
-	HasLeftBank,
-    ROUND(AVG(CreditScore), 0) AS customer_credit_score,
-	COUNT(HasLeftBank) AS customer_left_count
-FROM `customer-churn-records-cleaned`
-GROUP BY HasLeftBank
-ORDER BY customer_left_count;
-
--- Determine if complaints and satifacation scores affect if customer left bank
-SELECT
-	HasLeftBank,
-    ROUND(AVG(YearsAtBank), 0) AS customer_tenure,
+    Age,
     Complain,
-    COUNT(Complain) AS customer_has_complain,
-    ROUND(AVG(SatisfactionScore), 1) AS customer_satification_score,
-	COUNT(HasLeftBank) AS customer_left_count
+    SatisfactionScore
 FROM `customer-churn-records-cleaned`
-GROUP BY HasLeftBank, Complain
-ORDER BY customer_left_count;
+WHERE HasLeftBank = TRUE;
 
--- Determine if bank activity affect if customer left bank
-SELECT
-	HasLeftBank,
-    IsActiveMember,
-	COUNT(HasLeftBank) AS customer_left_count
+-- Get the average satisfaction score based on the customer demographic with most amount of complaints
+SELECT 
+	Gender,
+    Geography,
+    Age,
+    Complain,
+    ROUND(AVG(SatisfactionScore), 0) AS AvgSatisfactionScore,
+    COUNT(Complain) AS ComplaintCount
 FROM `customer-churn-records-cleaned`
-GROUP BY HasLeftBank, IsActiveMember
-ORDER BY customer_left_count;
+WHERE HasLeftBank = TRUE
+GROUP BY Geography, Gender, Age, Complain
+ORDER BY ComplaintCount DESC;
 
--- Determine if having a card affect if customer left bank
-SELECT
-	HasLeftBank,
-	HasCrCard,
-    CardType,
-    ROUND(AVG(PointsEarned), 0) AS customer_points_avg,
-	COUNT(HasLeftBank) AS customer_left_count
+-- Get count of customers who left complained by region
+SELECT 
+	Gender,
+    Geography,
+    Complain,
+    COUNT(Complain) AS ComplaintCount
 FROM `customer-churn-records-cleaned`
-GROUP BY HasLeftBank, HasCrCard, CardType
-ORDER BY customer_left_count;
+WHERE HasLeftBank = TRUE
+GROUP BY Geography, Gender, Complain
+ORDER BY ComplaintCount DESC;
 
--- Determine if the number of products purchased from the bank affect if customer left bank
-SELECT
-	HasLeftBank,
-	NumOfProducts,
-	COUNT(HasLeftBank) AS customer_left_count
+-- Account Age --
+SELECT 
+	Gender,
+    Geography,
+    Age,
+    YearsAtBank    
 FROM `customer-churn-records-cleaned`
-GROUP BY HasLeftBank, NumOfProducts
-ORDER BY NumOfProducts DESC;
+WHERE HasLeftBank = TRUE;
 
--- Determine if the customer's salary and bank balance affect if customer left bank 
-SELECT
-	HasLeftBank,
-	ROUND(AVG(Balance), 0) AS customer_balance_avg,
-	ROUND(AVG(EstimatedSalary), 0) AS customer_salary_avg,
-	COUNT(HasLeftBank) AS customer_left_count
+-- Get average account age based on customer demographic
+SELECT 
+	Gender,
+    Geography,
+    Age,
+    ROUND(AVG(YearsAtBank), 1) AS AvgYearsAtBank    
 FROM `customer-churn-records-cleaned`
-GROUP BY HasLeftBank
-ORDER BY customer_left_count;
+WHERE HasLeftBank = TRUE
+GROUP BY Gender, Geography, Age
+ORDER BY AvgYearsAtBank DESC;
+
+SELECT 
+	Gender,
+    Geography,
+    ROUND(AVG(YearsAtBank), 1) AS AvgYearsAtBank    
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Gender, Geography
+ORDER BY AvgYearsAtBank DESC;
+
+-- Product Trend Analysis --
+SELECT
+	Gender,
+    Geography,
+    Age,
+    NumOfProducts,
+    HasCrCard,
+    IsActiveMember
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+ORDER BY HasCrCard DESC, IsActiveMember DESC;
+
+-- Get average number of products bought from bank based on customer demographic with most amount of products sold
+SELECT
+	Gender,
+    Geography,
+    Age,
+    ROUND(AVG(NumOfProducts), 0) AS AvgNumberofProducts
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Gender, Geography, Age
+ORDER BY AvgNumberofProducts DESC;
+
+-- Get average number of products bought from bank based on customer demographic with most amount of products sold
+SELECT
+	Gender,
+    Geography,
+    COUNT(HasCrCard) AS AvgCrCard
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Gender, Geography
+ORDER BY AvgCrCard DESC;
+
+
+-- Customer Demographic --
+SELECT
+	Gender,
+    COUNT(Gender) AS CustomerCount,
+    Geography
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Gender, Geography;
+
+-- Counting the number of customers that left the bank by region
+SELECT
+	Geography,
+    Gender,
+    Age,
+    COUNT(Geography) AS CustomerGeography
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Geography, Gender, Age
+ORDER BY CustomerGeography DESC;
+
+SELECT
+	Geography,
+    Gender,
+    COUNT(Geography) AS CustomerGeography
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Geography, Gender
+ORDER BY CustomerGeography DESC;
+
+SELECT
+	Geography,
+    COUNT(Geography) AS CustomerGeography
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Geography
+ORDER BY CustomerGeography DESC;
+
+--  Get the average balance and salary of customers that left the bank by gender, age, region
+SELECT
+	Geography,
+    Gender,
+    Age,
+    ROUND(AVG(Balance), 2) AS AvgBalance,
+    ROUND(AVG(EstimatedSalary), 2) AS AvgSalary
+FROM `customer-churn-records-cleaned`
+WHERE HasLeftBank = TRUE
+GROUP BY Geography, Gender, Age
+ORDER BY AvgBalance DESC;
+
