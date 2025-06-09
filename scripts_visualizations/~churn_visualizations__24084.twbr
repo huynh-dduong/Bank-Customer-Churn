@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20251.25.0520.1026                               -->
-<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -19,6 +19,7 @@
     <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
+  <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations?rev=1.0' id='churn_visualizations' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -28,7 +29,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Customer-Churn-Records-Cleaned' name='textscan.0rd7x780rm77061d83agd1cjdgga'>
-            <connection class='textscan' directory='C:/Users/russe/OneDrive/Documents/GitHub/Bank-Customer-Churn/raw_data' filename='Customer-Churn-Records-Cleaned.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/russe/OneDrive/Documents/GitHub/Bank-Customer-Churn/raw_data' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0rd7x780rm77061d83agd1cjdgga' name='Customer-Churn-Records-Cleaned.csv' table='[Customer-Churn-Records-Cleaned#csv]' type='table'>
@@ -328,7 +329,7 @@
       <column-instance column='[Calculation_299489393993588736]' derivation='User' name='[usr:Calculation_299489393993588736:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_299489393995988993]' derivation='User' name='[usr:Calculation_299489393995988993:qk]' pivot='key' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/russe/AppData/Local/Temp/TableauTemp/#TableauTemp_1yrclsq0ysnqst1bt745u04kymbf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/09/2025 01:25:08 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/russe/AppData/Local/Temp/TableauTemp/#TableauTemp_1t4mbch0it0r7v1e6usst018dmhf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/09/2025 05:29:31 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -658,6 +659,7 @@
   </actions>
   <worksheets>
     <worksheet name='Churn by Activity/Complain'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyActivityComplain?rev=' id='117714324' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -720,6 +722,7 @@
       <simple-id uuid='{FA2F9972-4753-42D7-9C9F-5AA2B051EE18}' />
     </worksheet>
     <worksheet name='Churn by Activity/Credit Card'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyActivityCreditCard?rev=' id='117714325' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -782,6 +785,7 @@
       <simple-id uuid='{38BA588C-F8FB-44EE-894E-797A4FF024D7}' />
     </worksheet>
     <worksheet name='Churn by Age'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyAge?rev=' id='117714315' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -855,6 +859,7 @@
       <simple-id uuid='{D404ED04-1898-42FF-B7A5-F9DE99BD8E99}' />
     </worksheet>
     <worksheet name='Churn by Balance'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyBalance?rev=' id='117714329' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -964,6 +969,7 @@
       <simple-id uuid='{7370849B-774B-41A8-9864-18EDE09F8C80}' />
     </worksheet>
     <worksheet name='Churn by Card'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyCard?rev=' id='117714320' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1041,6 +1047,7 @@
       <simple-id uuid='{BBF7FCEA-1CD9-4B52-8F98-4DBDCF49464A}' />
     </worksheet>
     <worksheet name='Churn by Country'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyCountry?rev=' id='117714313' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1113,6 +1120,7 @@
       <simple-id uuid='{1DB03DB6-7CF1-49FC-844B-32011106F81A}' />
     </worksheet>
     <worksheet name='Churn by Country, Age, and Gender'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyCountryAgeandGender?rev=' id='117714317' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1213,6 +1221,7 @@
       <simple-id uuid='{8D8D4E95-8FF4-44D6-9712-00406B9F26A2}' />
     </worksheet>
     <worksheet name='Churn by Credit Card'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyCreditCard?rev=' id='117714327' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1267,6 +1276,7 @@
       <simple-id uuid='{917FE938-3D95-4470-AA7B-0FD6CBA644BA}' />
     </worksheet>
     <worksheet name='Churn by Credit Score'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyCreditScore?rev=' id='117714328' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1334,6 +1344,7 @@
       <simple-id uuid='{370741E0-629F-4AFA-93CA-DBC86B2FEB37}' />
     </worksheet>
     <worksheet name='Churn by Gender'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyGender?rev=' id='117714311' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1370,6 +1381,7 @@
       <simple-id uuid='{AE379CC5-7EE9-486C-8728-499B20C33543}' />
     </worksheet>
     <worksheet name='Churn by Points'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyPoints?rev=' id='117714333' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1453,6 +1465,7 @@
       <simple-id uuid='{FAD5C602-4116-418E-ADD3-51B344343EE1}' />
     </worksheet>
     <worksheet name='Churn by Products'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyProducts?rev=' id='117714326' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1514,6 +1527,7 @@
       <simple-id uuid='{2DEED81D-101B-4F67-A205-87BC7055EC0F}' />
     </worksheet>
     <worksheet name='Churn by Salary'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbySalary?rev=' id='117714330' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1624,6 +1638,7 @@
       <simple-id uuid='{0FB58DA1-A0C4-4E4B-808E-11032990D42A}' />
     </worksheet>
     <worksheet name='Churn by Salary and Balance'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbySalaryandBalance?rev=' id='117714331' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1758,6 +1773,7 @@
       <simple-id uuid='{91C13DEE-9EBD-4857-9338-694E1474C098}' />
     </worksheet>
     <worksheet name='Churn by Satisfaction and Complaints'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbySatisfactionandComplaints?rev=' id='117714332' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1879,6 +1895,7 @@
       <simple-id uuid='{1622188F-6302-4602-98CB-71648314208D}' />
     </worksheet>
     <worksheet name='Churn by Tenure'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyTenure?rev=' id='117714319' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1943,6 +1960,7 @@
       <simple-id uuid='{6A64CAC0-EAD6-41BC-BF8A-3B99EC835C52}' />
     </worksheet>
     <worksheet name='Churn by Tenure and Card Type'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyTenureandCardType?rev=' id='117714321' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -1984,6 +2002,7 @@
             <encodings>
               <color column='[federated.11j5mit1ufkgrd17n7i850di23qu].[:Measure Names]' />
             </encodings>
+            <reference-line axis-column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]' z-order='1' />
           </pane>
         </panes>
         <rows>[federated.11j5mit1ufkgrd17n7i850di23qu].[usr:Calculation_299489393993588736:qk]</rows>
@@ -1992,6 +2011,7 @@
       <simple-id uuid='{90C26043-C147-4BF6-A2EB-2D147B71152F}' />
     </worksheet>
     <worksheet name='Churn by Tenure/Number of Products'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/ChurnbyTenureNumberofProducts?rev=' id='117714323' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -2062,6 +2082,7 @@
       <simple-id uuid='{AB224316-61D3-4F99-ABF4-80564CC31B28}' />
     </worksheet>
     <worksheet name='Customer Count'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/CustomerCount?rev=' id='117714310' path='/workbooks/churn_visualizations' revision='' />
       <table>
         <view>
           <datasources>
@@ -2103,12 +2124,13 @@
   </worksheets>
   <dashboards>
     <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/churn_visualizations/Dashboard2?rev=' id='117714334' path='/workbooks/churn_visualizations' revision='' />
       <style />
       <size sizing-mode='automatic' />
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98148' id='3' param='vert' type-v2='layout-flow' w='98980' x='510' y='926'>
-            <zone h='6019' id='5' type-v2='text' w='98980' x='510' y='926'>
+          <zone h='98148' id='3' param='vert' type-v2='layout-flow' w='99064' x='468' y='926'>
+            <zone h='6019' id='5' type-v2='text' w='99064' x='468' y='926'>
               <formatted-text>
                 <run bold='true' fontsize='24'>Bank Churn Report</run>
               </formatted-text>
@@ -2119,8 +2141,8 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone fixed-size='372' h='43056' id='6' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98980' x='510' y='6945'>
-              <zone h='43056' id='15' name='Churn by Age' show-title='false' w='33036' x='510' y='6944'>
+            <zone fixed-size='372' h='43056' id='6' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='99064' x='468' y='6945'>
+              <zone h='43056' id='15' name='Churn by Age' show-title='false' w='33060' x='468' y='6944'>
                 <layout-cache cell-count-w='16' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -2129,7 +2151,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='43056' id='21' name='Churn by Gender' show-title='false' w='32972' x='33546' y='6944'>
+              <zone h='43056' id='21' name='Churn by Gender' show-title='false' w='33002' x='33528' y='6944'>
                 <layout-cache cell-count-w='2' minheight='141' non-cell-size-w='63' type-h='scalable' type-w='cell' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -2138,7 +2160,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='43056' id='19' name='Churn by Country' show-title='false' w='32972' x='66518' y='6944'>
+              <zone h='43056' id='19' name='Churn by Country' show-title='false' w='33002' x='66530' y='6944'>
                 <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -2158,8 +2180,8 @@
                 <format attr='padding' value='0' />
               </zone-style>
             </zone>
-            <zone h='49073' id='10' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98980' x='510' y='50001'>
-              <zone fixed-size='1275' h='49074' id='25' is-fixed='true' name='Churn by Tenure' show-title='false' w='24745' x='510' y='50000'>
+            <zone h='49073' id='10' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='99064' x='468' y='50001'>
+              <zone fixed-size='1275' h='49074' id='25' is-fixed='true' name='Churn by Tenure' show-title='false' w='24810' x='468' y='50000'>
                 <layout-cache minheight='142' type-h='scalable' type-w='cell' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -2168,7 +2190,7 @@
                   <format attr='margin' value='0' />
                 </zone-style>
               </zone>
-              <zone h='49074' id='28' name='Churn by Products' show-title='false' w='24745' x='25255' y='50000'>
+              <zone h='49074' id='28' name='Churn by Products' show-title='false' w='24751' x='25278' y='50000'>
                 <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='110' type-h='scalable' type-w='cell' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -2177,7 +2199,7 @@
                   <format attr='margin' value='0' />
                 </zone-style>
               </zone>
-              <zone h='49074' id='31' name='Churn by Card' show-title='false' w='24745' x='50000' y='50000'>
+              <zone h='49074' id='31' name='Churn by Card' show-title='false' w='24752' x='50029' y='50000'>
                 <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -2186,8 +2208,8 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49074' id='12' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='24745' x='74745' y='50000'>
-                <zone h='24537' id='13' name='Churn by Activity/Complain' show-title='false' w='24745' x='74745' y='50000'>
+              <zone h='49074' id='12' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='24751' x='74781' y='50000'>
+                <zone h='24537' id='13' name='Churn by Activity/Complain' show-title='false' w='24751' x='74781' y='50000'>
                   <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2196,7 +2218,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='24537' id='14' name='Churn by Activity/Credit Card' show-title='false' w='24745' x='74745' y='74537'>
+                <zone h='24537' id='14' name='Churn by Activity/Credit Card' show-title='false' w='24751' x='74781' y='74537'>
                   <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2226,9 +2248,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2200' minheight='2200' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98148' id='32' param='vert' type-v2='layout-flow' w='99156' x='422' y='926'>
-                <zone h='6019' id='5' type-v2='text' w='99156' x='422' y='926'>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='40' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='6019' id='5' type-v2='text' w='98980' x='510' y='926'>
                   <formatted-text>
                     <run bold='true' fontsize='24'>Bank Churn Report</run>
                   </formatted-text>
@@ -2240,7 +2262,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43056' id='15' is-fixed='true' name='Churn by Age' show-title='false' w='33052' x='422' y='6944'>
+                <zone fixed-size='280' h='43056' id='15' is-fixed='true' name='Churn by Age' show-title='false' w='33036' x='510' y='6944'>
                   <layout-cache cell-count-w='16' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2250,7 +2272,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43056' id='21' is-fixed='true' name='Churn by Gender' show-title='false' w='33052' x='33474' y='6944'>
+                <zone fixed-size='280' h='43056' id='21' is-fixed='true' name='Churn by Gender' show-title='false' w='32972' x='33546' y='6944'>
                   <layout-cache cell-count-w='2' minheight='141' non-cell-size-w='63' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2260,7 +2282,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43056' id='19' is-fixed='true' name='Churn by Country' show-title='false' w='33052' x='66526' y='6944'>
+                <zone fixed-size='280' h='43056' id='19' is-fixed='true' name='Churn by Country' show-title='false' w='32972' x='66518' y='6944'>
                   <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2270,7 +2292,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='49074' id='25' is-fixed='true' name='Churn by Tenure' show-title='false' w='24816' x='422' y='50000'>
+                <zone fixed-size='280' h='49074' id='25' is-fixed='true' name='Churn by Tenure' show-title='false' w='24745' x='510' y='50000'>
                   <layout-cache minheight='142' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2280,7 +2302,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='49074' id='28' is-fixed='true' name='Churn by Products' show-title='false' w='24815' x='25238' y='50000'>
+                <zone fixed-size='280' h='49074' id='28' is-fixed='true' name='Churn by Products' show-title='false' w='24745' x='25255' y='50000'>
                   <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='110' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2290,7 +2312,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='49074' id='31' is-fixed='true' name='Churn by Card' show-title='false' w='24762' x='50053' y='50000'>
+                <zone fixed-size='280' h='49074' id='31' is-fixed='true' name='Churn by Card' show-title='false' w='24745' x='50000' y='50000'>
                   <layout-cache cell-count-w='4' minheight='142' non-cell-size-w='132' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2300,7 +2322,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='188' h='24537' id='13' is-fixed='true' name='Churn by Activity/Complain' show-title='false' w='24763' x='74815' y='50000'>
+                <zone fixed-size='188' h='24537' id='13' is-fixed='true' name='Churn by Activity/Complain' show-title='false' w='24745' x='74745' y='50000'>
                   <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2310,7 +2332,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='189' h='24537' id='14' is-fixed='true' name='Churn by Activity/Credit Card' show-title='false' w='24763' x='74815' y='74537'>
+                <zone fixed-size='189' h='24537' id='14' is-fixed='true' name='Churn by Activity/Credit Card' show-title='false' w='24745' x='74745' y='74537'>
                   <layout-cache cell-count-h='2' cell-count-w='2' non-cell-size-h='40' non-cell-size-w='116' type-h='cell' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2334,7 +2356,7 @@
       <simple-id uuid='{252B5B3C-D07B-4EE7-89AE-6474F801F787}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows pres-mode='true' source-height='30'>
     <window class='worksheet' name='Customer Count'>
       <cards>
         <edge name='left'>
@@ -2514,7 +2536,7 @@
       </viewpoint>
       <simple-id uuid='{6CE15A06-BDEB-4FC4-80F1-918989468301}' />
     </window>
-    <window class='worksheet' name='Churn by Tenure and Card Type'>
+    <window class='worksheet' maximized='true' name='Churn by Tenure and Card Type'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2588,7 +2610,7 @@
       </cards>
       <simple-id uuid='{768BA78D-ECDF-4AA3-BCBB-258E6F092713}' />
     </window>
-    <window class='worksheet' maximized='true' name='Churn by Activity/Credit Card'>
+    <window class='worksheet' name='Churn by Activity/Credit Card'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2631,6 +2653,9 @@
           </strip>
         </edge>
       </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
       <simple-id uuid='{178560BA-11DB-4A38-BFCE-1F1420F5D465}' />
     </window>
     <window class='worksheet' name='Churn by Credit Card'>
@@ -2845,7 +2870,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='4' />
+      <active id='-1' />
       <simple-id uuid='{B1A4C560-D4A4-4288-8CC2-2DF4A8FFEA8B}' />
     </window>
   </windows>
