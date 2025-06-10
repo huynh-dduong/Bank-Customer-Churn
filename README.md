@@ -110,4 +110,8 @@ An interactive Tableau dashboard can be downloaded [here](scripts_visualizations
 ![Churn by Credit Score](images/churn_creditscore.png)
 
 ### <ins>Recommendations</ins>
-- 
+- With 21% of the customer-base over the age of 45 containing the highest churn ratings, enhancing support to older clientele by offering better incentives on credit cards and various products might improve churn ratings.
+
+- The positive correlations between active memeberships and customers having credit cards & complaints show that the banks need to involved itself more with the demographic. Allowing for more barriers of entry, more notifications on incentives, allowing more customers to own a credit card, and increasing advertising of other products would help that cause.
+
+- As seen with tenure having a positive effect on retention rates, being able to retain current customers is vital in providing stability by improving the quality of experience through the preivous means of increased incentives or activity. But also improving the quality through opening more locations to reduce the amount of customers per bank to provide a fuller experience when reviewing Germany with the most worst overall churn while having similar populations as France.
