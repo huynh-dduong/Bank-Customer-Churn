@@ -32,26 +32,82 @@ An interactive Tableau dashboard can be downloaded [here](scripts_visualizations
 ![Tableau Dashboard of Project](images/dashboard.png)
 
 ### <ins>Demographic Comparisons</ins>
-- Churn rates peaked at males German customers at 55 yeras old with a 71% churn rate. This is surprising as generally older customers are less likely to leave the bank compared to younger customers.
-- Similarly, female German customers ages 50-55 yielded the highest churn rate of 73%. Holding the same sentiments as the last point.
-- On average, Spain's customers scored the lowest churn rates out of the other locations at 19% which is attributed to it having the lowest density of customers.
-- France on the other hand, has virtually the same amount of customers as Germany. But has a churn rate of 24%, notably lower than Germanys 34% churn rate. This might suggest a better bank quality with customers or a better distributions of banks per customer to provide a fuller service.
+- Churn rates peaked among male German customers at 55 years old with a 71% churn rate. This is surprising, as older customers are generally less likely to leave the bank compared to younger customers.
+
+- Similarly, female German customers aged 50–55 yielded the highest churn rate at 73%, echoing the previous sentiment.
+
+- On average, customers in Spain had the lowest churn rate among all locations at 19%, which is attributed to the country having the lowest customer density.
+
+- France, on the other hand, has nearly the same number of customers as Germany but a churn rate of 24%, notably lower than Germany’s 34%. This might suggest better bank quality or a more favorable distribution of branches per customer, enabling fuller service.
 
 ![Demographic Comparisons Sheet](images/churn_demographic.png)
 
 ### <ins>Account Age</ins>
-- The zero, first, and ninth years partnered with the bank marked the highest churn rates with 23% and 22% respectively. 
-- Churn rates declined on a year-over-year basis until the customer reached 7 years with the bank which the churn rate was 17%. Rates did increase for the remaining data of years.
-- Over the 10 years with the bank, there is an slight downward trend from 23% at the beginning to 21% at the 10 year mark. This does indicate that the longer a customer stays with the bank, the less likely a customer will leave.
+- The 0th, 1st, and 9th years of partnership with the bank marked the highest churn rates at 23% and 22%, respectively.
+
+- Churn rates declined year-over-year until customers reached 7 years with the bank, at which point the churn rate was 17%. Rates then increased in the remaining years.
+
+- Over the 10-year span, there is a slight downward trend in churn, from 23% at the beginning to 21% at the 10-year mark. This suggests that the longer a customer stays with the bank, the less likely they are to leave.
 
 ![Account Age Sheet](images/churn_tenure.png)
 
 ### <ins>Satisfaction Sentiment</ins>
-- Churn rates were the lowest with satisfaction scores of 3/5. But also, the number of complaints was at the highest for this satisfaction score with 2,042 instances.
-- Generally, churn rates decrease as the satisfaction score increases. However, the number of complaints relatively remains the same with the increasing satisfaction score. Drawing little correlations for churn rates between satisfaction scores and number of complaints.
+- Churn rates were lowest at a satisfaction score of 3 out of 5. Interestingly, this score also had the highest number of complaints, totaling 2,042.
+
+- Generally, churn rates decrease as satisfaction scores increase. However, the number of complaints remains relatively consistent across scores, suggesting little correlation between complaints and churn based on satisfaction scores alone.
 
 ![Complaint and Satisfaction Sheet](images/churn_complaint_satisfaction.png)
 
 ### <ins>Product Trends</ins>
+- Comparing customer activity and complaint behavior shows a clear correlation: inactive customers who didn’t complain had a churn rate below 1%, while active customers who did complain had a churn rate of 99%.
 
-![alt-text-1](images/activemember_complaints_comparison.png) ![alt-text-2](images/activemember_creditcard_comparison.png)
+- Complaints had a stronger correlation with churn than activity. In both cases where a complaint was made, the churn rate exceeded 99%.
+
+- Customer activity and whether the customer had a credit card also showed a correlation with churn: inactive members without a credit card had a 26% churn rate, while active members with a credit card had only 13%.
+
+- Membership activity had a stronger influence on churn than credit card ownership, with inactive members averaging a 26.5% churn rate compared to 14.9% for active members.
+
+![Active Member and Complaints Comparison Sheets](images/activemember_complaints_comparison.png) ![Active Member and Credit Cards Comparison Sheets](images/activemember_creditcard_comparison.png)
+
+- Customers with less than a $10,000 bank balance had the lowest churn rate at 14%, despite representing the highest customer density. This may indicate limited interaction or experience with the bank, reducing the likelihood of dissatisfaction.
+
+- After a $30,000 balance, churn rates began to increase steadily, peaking at 100% for balances of $230,000. This may suggest diminishing incentives to remain as balances grow.
+
+![Churn by Balance](images/churn_balance.png)
+
+- Churn rate increased with salary, peaking at $170,000 with a churn rate of 23.1%.
+
+- The lowest churn rate was among customers with $120,000 salaries at 19%. Beyond that point, churn began to rise again, with noticeable peaks every $60,000.
+
+- Each peak was followed by a sharp decline and gradual increase, possibly reflecting transitions between salary brackets.
+
+- Overall, there is a modest upward trend of about 2%, supporting the idea that customers with lower balances—and likely lower salaries—are more likely to stay with the bank due to fewer incentives to leave.
+
+![Churn by Salary](images/churn_salary.png)
+
+- As previously noted, churn rates were lowest at the 7-year tenure mark. Gold cardholders had the best retention with a churn rate of 15%, followed by Platinum and Diamond cardholders at 15% and 16%, respectively.
+
+- Silver, Diamond, and Gold cards had the highest churn rates during the worst-performing tenure years, at 25%, 22%, and 22%, respectively. This may suggest a lack of incentives tied to these card types.
+
+- Overall, Platinum, Silver, and Gold had the highest churn rates at 22%, 21%, and 20%, respectively. This slight variation (only a 3% difference) suggests a weak correlation between card type and churn.
+
+![Churn by Tenure and Card Type Sheet](images/churn_tenure_cardtype.png) ![Churn by Card Type Sheet](images/churn_creditcard.png)
+
+- Customers who owned two products from the bank had the most favorable churn rate at just 7%. Churn rates increased significantly as the number of products increased.
+
+- Due to a difference in sample sizes of over 1,600%, comparing churn rates across product quantities is difficult, and correlations should be viewed cautiously.
+
+- The decrease in churn between owning one and two products—accompanied by a difference of about 500 customers and a 20% drop in churn—suggests that owning more products may improve retention.
+
+![Churn by Number of Products Sheet](images/churn_products.png) 
+
+- Looking at broader patterns, customers who owned two products were, on average, 38 years old, had $52,000 in the bank, and earned $100,000. This demographic suggests that younger customers with lower income and balances are less likely to leave the bank.
+
+![Churn by Balance, Products, Age, and Salary](images/churn_age_balance_products_salary.png)
+
+- Churn rates peaked at a credit score of 350 with 100%, then sharply dropped to 25% at a score of 450, and further decreased to 18.5% at a score of 850. This suggests a notable correlation between higher credit scores and lower churn.
+
+![Churn by Credit Score](images/churn_creditscore.png)
+
+### <ins>Recommendations</ins>
+- 
